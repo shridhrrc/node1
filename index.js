@@ -24,8 +24,9 @@ let seconds = date_ob.getSeconds();
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello this is Node App running on Azure with continous integration and continous deployment(Devops Ideology)! \nAuthor is MR. Shridhar Karigoudar \n\n\n\n\n                                                                                         Thanks for visiting my First build'
-  console.log(year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds);
+  const msg1 = "visiting date and time is"+year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds
   res.end(msg);
+  res.end(msg1);
 });
 
 server.listen(port, () => {
